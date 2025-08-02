@@ -50,22 +50,22 @@ const Bookings = () => {
         )
       }
 
-      // if(isError){
-      //   console.log(isError,'00001')
-      //   return(
-      //       <View className='flex-1 items-center justify-center bg-white'>
-      //           <Text className='text-red-500'>Failed to fetch bookings. </Text>
-      //           <TouchableOpacity
-      //           onPress={()=> refetch()}
-      //           className='mt-4 px-4 py-2 bg-blue-500 rounded'
-      //           >
-      //               <Text className='text-white font-semibold'>Retry</Text>
+      if(isError){
+        console.log(isError,'00001')
+        return(
+            <View className='flex-1 items-center justify-center bg-white'>
+                <Text className='text-red-500'>Failed to fetch bookings. </Text>
+                <TouchableOpacity
+                onPress={()=> refetch()}
+                className='mt-4 px-4 py-2 bg-blue-500 rounded'
+                >
+                    <Text className='text-white font-semibold'>Retry</Text>
 
-      //           </TouchableOpacity>
+                </TouchableOpacity>
 
-      //       </View>
-      //   )
-      // }
+            </View>
+        )
+      }
 
   return (
     <View className="flex-1 p-2 bg-white">
